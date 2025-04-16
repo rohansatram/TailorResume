@@ -1,3 +1,5 @@
 venv/
 .env
 resume/
+__pycache__/
+*.pdf

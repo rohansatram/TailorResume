@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Resume Tailor</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        margin: 2em;
+      }
+      textarea {
+        width: 100%;
+        min-height: 150px;
+        margin-bottom: 1em;
+      }
+      button {
+        padding: 0.5em 1em;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Tailor Your Resume</h1>
+    <form action="/process" method="post">
+      <label for="job_description">Paste Job Description:</label><br />
+      <textarea id="job_description" name="job_description" required></textarea
+      ><br />
+      <button type="submit">Generate Tailored Resume PDF</button>
+    </form>
+  </body>
+</html>
