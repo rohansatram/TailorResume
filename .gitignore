@@ -3,3 +3,5 @@ venv/
 resume/
 __pycache__/
 *.pdf
+_DS_Store
+keywords.txt

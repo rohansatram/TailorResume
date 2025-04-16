@@ -6,14 +6,13 @@ from flask import Flask, render_template, request, send_from_directory, abort, a
 from modify import *
 import os
 from dotenv import load_dotenv
-import google.generativeai as genai
 
-load_dotenv()
+#load_dotenv()
 
 app = Flask(__name__)
 
-os.environ['GOOGLE_API_KEY'] = os.getenv('API_KEY')
-genai.configure(api_key=os.environ['GOOGLE_API_KEY'])
+#os.environ['GOOGLE_API_KEY'] = os.getenv('API_KEY')
+#genai.configure(api_key=os.environ['GOOGLE_API_KEY'])
 
 # Directory where resume files are stored
 RESUME_DIR = os.path.abspath('resume')
